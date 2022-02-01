@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container flexed">
+            <h1 class="meniuh1">DojoWeather</h1>
+            <div class="meniu">
+                <ul class="list flexed">
+                    <li>
+                        <h2 onclick="city()">Burbank</h2>
+                    </li>
+                    <li>
+                        <h2 onclick="city()">Chicago</h2>
+                    </li>
+                    <li>
+                        <h2 onclick="city()">Dallas</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="top flexed">
+            <h1>San Jose</h1>
+            <div class="temp flexed">
+                <p>show temperature in</p>
+                <select onchange="changevalue(this)">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="middle flex-row">
+            <div class="day">
+                <h2>Today</h2>
+                <img class="weather-img" src="./assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="tempnumbers flexed">
+                    <p id="temperaturenumbers1">24</p>
+                    <p id="temperaturenumbers2">18</p>
+                </div>
+            </div>
+            <div class="day">
+                <h2>Tomorrow</h2>
+                <img class="weather-img" src="./assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="tempnumbers flexed">
+                    <p id="temperaturenumbers3">27</p>
+                    <p id="temperaturenumbers4">19</p>
+                </div>
+            </div>
+            <div class="day">
+                <h2>Friday</h2>
+                <img class="weather-img" src="./assets/some_clouds.png" alt="some clouds">
+                <p>some clouds</p>
+                <div class="tempnumbers flexed">
+                    <p id="temperaturenumbers5">21</p>
+                    <p id="temperaturenumbers6">16</p>
+                </div>
+            </div>
+            <div class="day">
+                <h2>Saturday</h2>
+                <img class="weather-img" src="./assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <div class="tempnumbers flexed">
+                    <p id="temperaturenumbers7">26</p>
+                    <p id="temperaturenumbers8">21</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom flexed">
+            <img class="cookie-img" src="./assets/cookie.png" alt="cookie">
+            <div>
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyze our traffic <span>Read more...</span></p>
+            </div>
+            <button onclick="hide()" class="accept-btn">I Accept</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
